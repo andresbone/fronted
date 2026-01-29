@@ -8,6 +8,12 @@ function Header() {
                 <Link to="/datosequipos">
                     <Button style={{ marginRight: "10px" }}>Equipos</Button>
                 </Link>
+                <Link to="/datosusuario">
+                    <Button style={{ marginRight: "10px" }}>Usuarios</Button>
+                </Link>
+                <Link to="/datosjugador">
+                    <Button style={{ marginRight: "10px" }}>Jugadores</Button>
+                </Link>
             </center>
         </div>
     )
