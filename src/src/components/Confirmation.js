@@ -47,7 +47,7 @@ Confirmation.propTypes = {
   title: PropTypes.string,
   confirmation: PropTypes.string,
   show: PropTypes.bool,
-  proceed: PropTypes.func, // called when ok button is clicked.
+  proceed: PropTypes.func, 
   enableEscape: PropTypes.bool
 };
 

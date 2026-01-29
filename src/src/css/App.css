@@ -36,10 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.notificacion {
-  position: fixed;
-  word-wrap: break-word;
-  width: 250px;
-  z-index: 9999;
-}
