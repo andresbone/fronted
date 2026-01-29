@@ -3,7 +3,7 @@ import React from "react";
 function Editar(){
     return(
         <div>
-            Editar
+            Jelouda Editar
         </div>
     );
 }

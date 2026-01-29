@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.container {
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Alineación de la cabecera (Botón y Buscador) */
+.controls-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+/* Estabilización de la Tabla */
+.table {
+    width: 100%;
+    table-layout: fixed;
+    /* ESTO ES CLAVE: evita que las celdas cambien de ancho según el texto */
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Definición estricta de anchos por columna */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+/* ID */
+.table th:nth-child(2),
+.table td:nth-child(2) {
+    width: 15%;
+}
+
+/* Ciudad */
+.table th:nth-child(3),
+.table td:nth-child(3) {
+    width: 15%;
+}
+
+/* País */
+.table th:nth-child(4),
+.table td:nth-child(4) {
+    width: 25%;
+}
+
+/* Descripción */
+.table th:nth-child(5),
+.table td:nth-child(5) {
+    width: 15%;
+}
+
+/* Idioma */
+.table th:nth-child(6),
+.table td:nth-child(6) {
+    width: 15%;
+}
+
+/* Moneda */
+.table th:nth-child(7),
+.table td:nth-child(7) {
+    width: 10%;
+    text-align: center;
+}
+
+/* Acciones */
+
+.table th {
+    background-color: #f8fafc;
+    color: #475569;
+    padding: 16px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    /* Evita que el texto largo rompa la fila */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Para que la descripción se vea completa si es larga (opcional) */
+.table td:nth-child(4) {
+    white-space: normal;
+    line-height: 1.4;
+}
+
+/* Acciones pegadas */
+.action-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Paginación centrada */
+.pagination-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

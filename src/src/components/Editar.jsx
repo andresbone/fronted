@@ -1,11 +1,11 @@
 import React from "react";
 
-function Nuevo(){
+function Editar(){
     return(
         <div>
-            Jelouda Nuevo
+            Editar
         </div>
     );
 }
 
-export default Nuevo;
+export default Editar;
